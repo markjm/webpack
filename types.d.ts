@@ -11732,11 +11732,6 @@ declare interface Watcher {
 	 * get info about files
 	 */
 	getFileTimeInfoEntries: () => Map<string, FileSystemInfoEntry | "ignore">;
-
-	/**
-	 * get info about directories
-	 */
-	getContextTimeInfoEntries: () => Map<string, FileSystemInfoEntry | "ignore">;
 }
 declare abstract class Watching {
 	startTime: null | number;
